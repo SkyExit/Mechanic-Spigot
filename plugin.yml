@@ -1,0 +1,72 @@
+name: Mechanic
+version: 1.7.1
+main: de.laurinhummel.mechanic.main.Main
+description: A Minecraft plugin that makes your life easier.
+author: SkyExit
+api-version: 1.13
+
+depend: [PlaceholderAPI]
+
+commands:
+   heal:
+      description: Heal Yourself!
+   feed:
+      description: Feed Yourself!
+   gm:
+      description: Easy Gamemode switch!
+   mechanic:
+      description: Mechanic GUI!
+   setspawn:
+      description: SetSpawn!
+   spawn:
+      description: Teleport to Spawn!
+   sethome:
+      description: SetHome!
+   home:
+      description: Teleport to Home!
+   setwarp:
+      description: Sets a Warp!
+   warp:
+      description: Warp to a warp!
+   date:
+      description: Shows the time!
+   flyspeed:
+      description: Set your Flyspeed!
+   walkspeed:
+      description: Set your Walkspeed!
+   glow:
+      description: Glow like a god!
+   suicide:
+      description: Kill yourself!
+   rainbowarmor:
+      description: dress up!
+   wb:
+      description: Open a portable Workbench!
+   ec:
+      description: Open a portable Enderchest!
+   invsee:
+      description: Open a Players inventory!
+   hat:
+      description: Weare any item as your hat!
+   nick:
+      description: Nick someone!
+   nuke:
+      description: Launch a Nuke!
+   godtool:
+      description: GodTool!
+   position:
+      description: set Positions!
+   deathloc:
+      description: See your last Death-Position!
+   test:
+      description: Test some stuff!
+   getmodule:
+      description: Get a Titan Module!
+   unstuck:
+      description: Unstuck!
+   boost:
+      description: Boost yourself into the air!
+   msg:
+      description: MSG!
+   playerloc:
+      description: Ask for the Coordinates of a Player!

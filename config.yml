@@ -1,0 +1,107 @@
+//Available languages: en, de
+Language: de
+Languages:
+  de:
+    DmgListener:
+      BLOCK_EXPLOSION: §7eine §6§lExplosion
+      CONTACT: §7einen §6§lKontakt
+      CRAMMING: §6§lCramming
+      DRAGON_BREATH: §7den §6§lDrachenatem
+      DROWNING: §6§lErtrinken
+      ENTITY_ATTACK: §7einen §6§lAngriff
+      ENTITY_EXPLOSION: §7eine §6§lExplosion
+      ENTITY_SWEEP_ATTACK: §7einen §6§lSweep-Angriff
+      FALL: §6§lFallschaden
+      FALLING_BLOCK: §7einen §6§lFallenden Block
+      FIRE: §6§lFeuer
+      FIRE_TICK: §6§lFeuer
+      FLY_INTO_WALL: §7einen §6§lElytra-Flug
+      HOT_FLOOR: §6§lTHE FLOOR IS LAVA
+      LAVA: §6§lLava
+      LIGHTNING: §7einen §6§lBlitz
+      MAGIC: §7einen §6§lTrank
+      MELTING: §6§lSchmelzen
+      POISON: §6§lGift
+      PROJECTILE: §7ein §6§lProjektil
+      STARVATION: §6§lVerhungerung
+      SUFFOCATION: §6§lErstickung
+      SUICIDE: §6§lSuicide?!
+      THORNS: §6§lDornen
+      VOID: §6§lVoid
+      WITHER: §6§lWither
+      UNDEFINEABLE: §6§oundefinierbar
+    Strings:
+      missingPlayer: Der Spieler ist nicht online!
+      noParamsPlease: Bitte benutze keine Parameter!
+      onlyPlayers: Dieser befehl ist Spielern vorbehalten!
+      noPermissions: Du hast keine berechtigung um dass zu tun!
+      mentionPlease: Bitte nenne einen Spieler!
+      Feed:
+        youGotFeeded: Du wurdest gefüttert!
+        heGotFeeded: wurde gefüttert!
+      Enderchest:
+        openingEnderchest: Oeffne Enderchest...
+      Heal:
+        youGotHealed: Du wurdest geheilt!
+        heGotHealed: wurde geheilt!
+      Gamemode:
+        survival: Willkommen im Überlebensmodus!
+        creative: Willkommen im Kreativmodus!
+        adventure: Willkommen im Abenteuermodus!
+        spectator: Willkommen im Beobachtungsmodus!
+        paramPlease: Bitte benutze einen Parameter zwischen 0 und 3!
+      Homes:
+        teleporting: Teleportieren...
+        noHomes: Du hast leider kein Zuhause!!!
+  en:
+    DmgListener:
+      BLOCK_EXPLOSION: §7An §6§lExplosion
+      CONTACT: §7A §6§lContact
+      CRAMMING: §6§lCramming
+      DRAGON_BREATH: §7The §6§lDreagonbreath
+      DROWNING: Drowning
+      ENTITY_ATTACK: §7An §6§lAttack
+      ENTITY_EXPLOSION: §7An §6§lExplosion
+      ENTITY_SWEEP_ATTACK: §7An §6§lSweep-Attack
+      FALL: §6§lFalldamage
+      FALLING_BLOCK: §7A §6§lFalling Block
+      FIRE: §6§lFire
+      FIRE_TICK: §6§lFIRE
+      FLY_INTO_WALL: §7Flying An §6§lElytra
+      HOT_FLOOR: §6§lTHE FLOOR IS LAVA
+      LAVA: §6§lLava
+      LIGHTNING: §7A §6§lLightning
+      MAGIC: §7A §6§lPotion
+      MELTING: §6§lMelting
+      POISON: §6§lPoison
+      PROJECTILE: §7A §6§lprojectile
+      STARVATION: §6§lstarvation
+      SUFFOCATION: §6§lSuffocation
+      SUICIDE: §6§lSuicide?!
+      THORNS: §6§lThorns
+      VOID: §6§lVoid
+      WITHER: §6§lWither
+      UNDEFINEABLE: §6§oundefineable
+    Strings:
+      missingPlayer: The Player isn#t online!
+      noParamsPlease: Please don't use any Parameters!
+      onlyPlayers: This Command is only for Players!
+      noPermissions: You don't have Permissions to do that!
+      mentionPlease: Please name a Player!
+      Feed:
+        youGotFeeded: You got Feeded!
+        heGotFeeded: got Feeded!
+      Enderchest:
+        openingEnderchest: Opening Enderchest...
+      Heal:
+        youGotHealed: You got Healed!
+        heGotHealed: got Healed!
+      Gamemode:
+        survival: Welcome to Survival!
+        creative: Welcome to Creative!
+        adventure: Welcome to Adventure!
+        spectator: Welcome to Spectator!
+        paramPlease: Please use a Parameter between 0 and 3!
+      Homes:
+        teleporting: Teleporting...
+        noHomes: You don't have any Homes!
