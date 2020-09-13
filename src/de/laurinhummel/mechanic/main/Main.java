@@ -1,11 +1,19 @@
 package de.laurinhummel.mechanic.main;
 
+import java.util.ArrayList;
 import java.util.logging.Logger;
 
 import de.laurinhummel.mechanic.commands.*;
 import de.laurinhummel.mechanic.listeners.*;
+import de.laurinhummel.mechanic.shortcuts.McColors;
 import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.event.Listener;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.ShapedRecipe;
+import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -68,6 +76,22 @@ public class Main extends JavaPlugin {
 		pluginManager.registerEvents(new DashUnit(), this);
 		pluginManager.registerEvents(new JumpUnit(), this);
 		pluginManager.registerEvents(new FlightBooster(), this);
+		pluginManager.registerEvents(new EnderBowListener(), this);
+
+		//Recipes
+		ItemStack enderBow = new ItemStack(Material.BOW);
+		ItemMeta ebMeta = enderBow.getItemMeta();
+		ebMeta.setDisplayName(McColors.DARK_PURPLE + "Ender Bow");
+		ArrayList<String> lore = new ArrayList<String>();
+		lore.add(McColors.RED + "Shoot arrows and teleport!");
+		ebMeta.setLore(lore);
+		enderBow.setItemMeta(ebMeta);
+		NamespacedKey ebKey = new NamespacedKey(Main.getPlugin(), "ender_bow");
+		ShapedRecipe ebRecipe = new ShapedRecipe(ebKey, enderBow);
+		ebRecipe.shape(" ES", "E S", " ES");
+		ebRecipe.setIngredient('E', Material.ENDER_PEARL);
+		ebRecipe.setIngredient('S', Material.STRING);
+		Bukkit.addRecipe(ebRecipe);
 		
 		//Config
 		FileConfiguration config = Main.getPlugin().getConfig();

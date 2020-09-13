@@ -17,16 +17,16 @@ public class PlayerLocateCommand implements CommandExecutor {
                 if(args.length == 1) {
                     Player target = Bukkit.getPlayer(args[0]);
                     if(target != null) {
-                        double x = target.getLocation().getX();
-                        double y = target.getLocation().getY();
-                        double z = target.getLocation().getZ();
-                        String world = target.getWorld().toString();
+                        int x = (int) target.getLocation().getX();
+                        int y = (int) target.getLocation().getY();
+                        int z = (int) target.getLocation().getZ();
+                        String world = target.getWorld().getName();
 
                         String targetName = target.getDisplayName();
                         String playerName = player.getDisplayName();
 
                         player.sendMessage(Names.MECHANIC2 + McColors.GOLD + targetName + ": " + McColors.AQUA + "X: " + McColors.GOLD + x + McColors.AQUA + " Y: " + McColors.GOLD + y + McColors.AQUA + " Z: " + McColors.GOLD + z + McColors.AQUA + " in World: " + McColors.GOLD + world);
-                        target.sendMessage(Names.MECHANIC2 + McColors.GOLD + playerName + McColors.AQUA + "Asked for your Position!");
+                        target.sendMessage(Names.MECHANIC2 + McColors.GOLD + playerName + McColors.AQUA + " Asked for your Position!");
                     }
                 }
             }
