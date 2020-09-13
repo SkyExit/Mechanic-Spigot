@@ -30,3 +30,4 @@ mechanic.unstuck
 mechanic.deathChest
 mechanic.damageListener
 mechanic.playerLocate
+mechanic.enderbow

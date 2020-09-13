@@ -77,21 +77,37 @@ public class Main extends JavaPlugin {
 		pluginManager.registerEvents(new JumpUnit(), this);
 		pluginManager.registerEvents(new FlightBooster(), this);
 		pluginManager.registerEvents(new EnderBowListener(), this);
+		pluginManager.registerEvents(new RocketLauncherListener(), this);
 
 		//Recipes
-		ItemStack enderBow = new ItemStack(Material.BOW);
-		ItemMeta ebMeta = enderBow.getItemMeta();
-		ebMeta.setDisplayName(McColors.DARK_PURPLE + "Ender Bow");
-		ArrayList<String> lore = new ArrayList<String>();
-		lore.add(McColors.RED + "Shoot arrows and teleport!");
-		ebMeta.setLore(lore);
-		enderBow.setItemMeta(ebMeta);
-		NamespacedKey ebKey = new NamespacedKey(Main.getPlugin(), "ender_bow");
-		ShapedRecipe ebRecipe = new ShapedRecipe(ebKey, enderBow);
-		ebRecipe.shape(" ES", "E S", " ES");
-		ebRecipe.setIngredient('E', Material.ENDER_PEARL);
-		ebRecipe.setIngredient('S', Material.STRING);
-		Bukkit.addRecipe(ebRecipe);
+		//EnderBow
+			ItemStack enderBow = new ItemStack(Material.BOW);
+			ItemMeta ebMeta = enderBow.getItemMeta();
+			ebMeta.setDisplayName(McColors.DARK_PURPLE + "Ender Bow");
+			ArrayList<String> lore = new ArrayList<String>();
+			lore.add(McColors.RED + "Shoot arrows and teleport!");
+			ebMeta.setLore(lore);
+			enderBow.setItemMeta(ebMeta);
+			NamespacedKey ebKey = new NamespacedKey(Main.getPlugin(), "ender_bow");
+			ShapedRecipe ebRecipe = new ShapedRecipe(ebKey, enderBow);
+			ebRecipe.shape(" ES", "E S", " ES");
+			ebRecipe.setIngredient('E', Material.ENDER_PEARL);
+			ebRecipe.setIngredient('S', Material.STRING);
+			Bukkit.addRecipe(ebRecipe);
+		//RocketLauncher
+			ItemStack rocketL = new ItemStack(Material.BLAZE_ROD);
+			ItemMeta rocketLMeta = rocketL.getItemMeta();
+			rocketLMeta.setDisplayName(McColors.DARK_PURPLE + "Rocket Launcher");
+			ArrayList<String> lore2 = new ArrayList<String>();
+			lore2.add(McColors.RED + "Shoot Rockets!");
+			rocketLMeta.setLore(lore2);
+			rocketL.setItemMeta(rocketLMeta);
+			NamespacedKey rlKey = new NamespacedKey(Main.getPlugin(), "rocket_launcher");
+			ShapedRecipe rlRecipe = new ShapedRecipe(rlKey, rocketL);
+			rlRecipe.shape(" ES", "E S", " ES");
+			rlRecipe.setIngredient('E', Material.BLAZE_ROD);
+			rlRecipe.setIngredient('S', Material.STRING);
+			Bukkit.addRecipe(rlRecipe);
 		
 		//Config
 		FileConfiguration config = Main.getPlugin().getConfig();
